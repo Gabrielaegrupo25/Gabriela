@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+COMBATENDO O COVIDE 19: UNIDOS EM UM ÚNICO OBJETIVO.
+</TITLE>
+<HEAD>
+<body bgcolor="#000000">
+<button id="button-plus">Almentar letras</button>
+<br>
+<button id="button-minus">Diminuir letras</button>
+<h3><p>VEJA A BAIXO AS PRINCIPAIS NOTÍCIAS SOBRE O COVIDE-19.</p></h3>
+<b>Sem vacina, SP anuncia imunização para 55 e 59 anos e professores em julho.</b>
+<br>
+<br>
+<br>
+Mesmo sem a confirmação da quantidade de vacinas que receberá nas próximas semanas, o governo de São Paulo anunciou hoje que vai finalizar a vacinação contra a
+covid-19 de pessoas com deficiência e com comorbidades até o fim de junho e iniciar a imunização da faixa etária entre 55 e 59 anos a partir do dia 1º de julho.
+Professores com idade entre 18 e 46 anos também entraram na atualização.
+Entre os dias 1º e 20 de julho, serão vacinadas as pessoas de 55 a 59 anos de idade. E, entre os dias 21 e 31 de julho, vamos vacinar os profissionais da educação
+que ainda precisam ser vacinados na faixa de 18 a 46 anos. Um público total de 1 milhão e 700 mil pessoas neste programa de vacinação.
+João Doria (PSDB), governador de São Paulo
+<hr>
+<a href="index1.html">Voltar a Página Inicial.</a>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+COMBATENDO O COVID-19: UNIDOS EM UM ÚNICO OBJETIVO.
+</TITLE>
+</head>
+<body bgcolor="#000000">
+<button id="button-plus">Almentar letras</button>
+<br>
+<button id="button-minus">Diminuir letras</button>
+<h1><p>Seja bem vindo ao informa covid</p></h1>
+<p>Aqui você encontrará, somente notícias boas sobre o covid-19</p>
+<hr>
+<ul>
+<li><a href="noticia1.html">SP anuncia vacinação de 55 a 59 anos em julho e para mais professores.</a>
+<li><a href="noticia2.html">Novos estudos afirmam que vacina da Pfizer/BioNTech consegue neutralizar variantes da Covid-19.</a>
+<li><a href="https://youtu.be/MxyS5FVJnDQ">6 boas notícias após um ano de pandemia, apesar da tragédia no Brasil.</a>
+<li><a href="https://youtu.be/Wh22U1nhSZw">Grávida supera o Covid e passa dia das mães com filhos.</a>
+<li><a href="noticia5.html">Fase 4 do covide-19.</a>
+<li><a href="https://podcasts.apple.com/br/podcast/vacinas-para-covid-19-no-brasil-vamos-saber-mais-um/id15301538">Vacinas para COVID-19 no Brasil, vamos saber mais 
+um pouco sobre cada uma delas?</a>
+<li><a href="perfil.html">Conheça Nossos Perfis.</a>
+<li><a href="info.html">Informe covid.</a>
+<li><a href="saibamais.html">Saiba mais.</a>
+<li><a href="form_itau.html">Fale Conosco.</a>
+</ul>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+<font face="verdana, arial" size="2">
+Produzido pelo informa-covide-19>
+<br>
+Copyright (c) 2021 -
+<br>
+<li>Aloisio Santos
+<li>Érica Andrade
+<li>Felipe Aparecido
+<li>Pedro Tibério
+<li>Valdair Silva
+</font>
+
+</body>
+</html>

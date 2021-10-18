@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+COMBATENDO O COVIDE 19: UNIDOS EM UM ÚNICO OBJETIVO.
+</title>
+</head>
+<body bgcolor="#000000">
+<button id="button-plus">Almentar letras</button>
+<br>
+<button id="button-minus">Diminuir letras</button>
+
+<h1><p>Preencha seus dados Abaixo</p></h1>
+<hr>
+<body>
+<form>
+NOME: <input type="text"name="nome"placeholder="DIGITE SEU NOME"required>
+<br>
+SOBRENOME: <input type="text"name="SOBREnome" placeholder="DIGITE SEU SOBRENOME"required>
+<br>
+CONTATO DE EMAIL: <input type="text" name="contatodeskype" placeholder="DIGITE SEU EMAIL" required>
+<h2>IDADE.</h2>
+0 A 12 ANOS: <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+<br>
+13 A 21 ANOS: <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+<br>
+22 A 40 ANOS: <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+<br>
+41 A 60 ANOS: <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+<br>
+MAIS: <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+<br>
+<h2>Possui Alguma Deficiência?</h2>
+SIM: <input type="radio" name="categoria" value="sim" /><br />
+NÃO: <input type="radio" name="categoria" value="nao" /><br />
+PREFIRO NÃO DIZER: <input type="radio" name="categoria"value="prefironaodizer" /><br />
+PERGUNTE: <input type="text"name="nome"placeholder="DIGITE SUA PERGUNTA"required>
+<br>
+<hr>
+<input type="reset" value="Apagar" />  &nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" value="Enviar" />
+<br>
+<a href="index1.html">Voltar a Página Inicial.</a>
+
+</form>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+</body>
+</html>

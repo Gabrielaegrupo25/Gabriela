@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+COMBATENDO O COVIDE 19: UNIDOS EM UM ÚNICO OBJETIVO.
+</title>
+</head>
+<body bgcolor="#000000">
+<button id="button-plus">Almentar letras</button>
+<br>
+<button id="button-minus">Diminuir letras</button>
+<h1><p>Escute com atenção: covide-19 Fase 4</p></h1>
+<hr>
+<audio src="fase_4.mp3"controls></audio>
+<hr>
+<a href="index1.html">Voltar a Página Inicial.</a>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>
